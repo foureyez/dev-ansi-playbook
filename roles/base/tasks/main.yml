@@ -1,0 +1,4 @@
+- name: Install chezmoi
+  ansible.builtin.shell: "sh -c "$(curl -fsLS get.chezmoi.io)""
+  args:
+    warn: no

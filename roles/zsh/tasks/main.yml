@@ -1,0 +1,10 @@
+- name: install zsh and other related packages
+  ansible.builtin.apt:
+    name: "zsh"
+    state: present
+    force_apt_get: yes
+
+- name: change user's shell to zsh
+  ansible.builtin.user:
+    name: "{{ local_username }}"
+    shell: /bin/zsh
