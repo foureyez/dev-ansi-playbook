@@ -1,5 +1,3 @@
----
 - import_playbook: base.yml
 - import_playbook: terminal.yml
 # - import_playbook: nvim.yml
----
